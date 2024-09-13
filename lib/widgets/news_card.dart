@@ -44,11 +44,17 @@ getNewsCard(e) {
                   // if (e['title'] != null) Text(e['title'].toString()),
                   const SizedBox(width: 5.0),
                   //   share
-                  IconButton(
+                  SizedBox(
+                    width: 24.0,
+                    height: 24.0,
+                    child: IconButton(
+                      padding: const EdgeInsets.all(0),
                       onPressed: () {
                         Share.share(e['url'].toString());
                       },
-                      icon: const Icon(Icons.share)),
+                      icon: const Icon(Icons.share),
+                    ),
+                  ),
                 ],
               ),
 
